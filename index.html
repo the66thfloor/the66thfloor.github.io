@@ -73,28 +73,6 @@
                 <!-- Large modal -->
                 <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg">Acknowledgements</a>
 
-                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
-                     aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Thank you, Ann, Charlie, Chuck and Johanna.</p>
-                                <p>"So shines a good deed in a weary world. Charlie? My boy. You've won!"<br>&mdash;Willy
-                                    Wonka & the Chocolate Factory, 1971</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </li>
 
@@ -138,7 +116,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-sm-6"><img src="images/jane-talking-to-the-security-guard.jpg" class="img-fluid" alt="The guard pointed Jane to the shiny elevator down the red-carpeted hallway in the front room of the
+                impressive headquarters."/></div>
+        <div class="col order-first">
             <p>“Good afternoon,” Jane said. “My name is Jane, and I’m here for my 2 p.m. interview for the
                 position
                 of president at the Air, Rails and Road corporation.”
@@ -153,6 +133,11 @@
                 stepped
                 inside.
             </p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
             <p>
                 Up, up, up dinging and din, <br/>
                 the doors open wide on floor number ten.<br/>
@@ -347,6 +332,32 @@
         </div>
     </div>
 </div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Acknowledgements</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you, Ann, Charlie, Chuck and Johanna.</p>
+                <p>"So shines a good deed in a weary world. Charlie? My boy. You've won!"<br>&mdash;Willy
+                    Wonka & the Chocolate Factory, 1971</p>
+                <p>Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with
+                    compassion, kindness, humility, gentleness and patience.<br/>&mdash;Colossians 3:12
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"
