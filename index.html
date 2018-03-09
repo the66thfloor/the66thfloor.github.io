@@ -445,12 +445,12 @@ width: 100%; background-color: #ff00cc; background-size: cover; padding-bottom:
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="jquery.cloudinary.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
 <script>
     var cl = new cloudinary.Cloudinary({cloud_name: "f66", secure: true});
     $.cloudinary.config({ cloud_name: 'f66', secure: true});
+    $.cloudinary.responsive();
 </script>
-<script src="jquery.cloudinary.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
-
 </body>
 </html>
