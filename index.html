@@ -29,7 +29,7 @@
 
     <!-- Font Awesome Code -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
     <!-- End font Awesome code -->
 
 
@@ -157,14 +157,14 @@ width: 100%; background-color: #ff00cc; background-size: cover; padding-bottom:
             </p></div>
 
         <div class="col-sm-6"><img
-                src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane-standing-outside-the-revolving-doors.jpg"
+                data-src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane-standing-outside-the-revolving-doors.jpg"
                 class="cld-responsive img-fluid"
                 alt="The sunny sky was blue like the frames on her glasses, and Jane was ready for a very important meeting."/>
         </div>
     </div>
     <div class="row align-items-center mb-4">
         <div class="col-sm-6 order-sm-first"><img
-                src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane-talking-to-the-security-guard.jpg"
+                data-src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane-talking-to-the-security-guard.jpg"
                 class="cld-responsive img-fluid"
                 alt="The guard pointed Jane to the shiny elevator down the red-carpeted hallway in the front room of the
                 impressive headquarters."/></div>
@@ -401,7 +401,7 @@ width: 100%; background-color: #ff00cc; background-size: cover; padding-bottom:
             Route 66</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=66f-20&l=am2&o=1&a=1627466533"
                              width="1" height="1" border="0" alt=""
                              style="border:none !important; margin:0px !important;"/></p>
-    <img src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,c_scale/http://www.bigge.com/uploads/IMG_0305.JPG" class="cld-responsive"><br />
+    <img data-src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,c_scale/http://www.bigge.com/uploads/IMG_0305.JPG" class="cld-responsive"><br />
 </div>
 
 <!--
@@ -454,14 +454,10 @@ width: 100%; background-color: #ff00cc; background-size: cover; padding-bottom:
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
-<script>
-    // Initialize
-    var cl = cloudinary.Cloudinary.new({  cloud_name: 'f66' });
-    // Call
+<script type="text/javascript">
+    var cl = cloudinary.Cloudinary.new({cloud_name: "f66"});
+    // replace 'demo' with your cloud name in the line above
     cl.responsive();
-    console.log('Running Cloudinary');
-    var cl = new cloudinary.Cloudinary({cloud_name: "f66", secure: true});
 </script>
 </body>
 </html>
