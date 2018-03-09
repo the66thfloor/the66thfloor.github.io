@@ -29,7 +29,13 @@
 
     <!-- Font Awesome Code -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
+    <script>
+    // Initialize
+    var cl = cloudinary.Cloudinary.new({  cloud_name: 'f66' });
+    // Call
+    cl.responsive();
+    </script>
     <!-- End font Awesome code -->
 
 
