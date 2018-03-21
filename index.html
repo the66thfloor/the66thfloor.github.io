@@ -159,7 +159,7 @@
 </nav>
 <div style="background-image: url('https://res.cloudinary.com/f66/image/fetch/f_auto,q_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane-in-front-of-the-building.jpg');
 width: 100%;
-background-color: #ff00cc;
+background-color: transparent;
 background-size: cover;
 height: calc(100vh - 56px);
 background-position: center center;">
@@ -241,7 +241,7 @@ background-position: center center;">
                 quick read.”
                  </p></div>
         <div class="col-sm-6"><img
-                src="https://res.cloudinary.com/f66/image/fetch/f_auto,q_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane_and_ms_wright.jpg"
+                data-src="https://res.cloudinary.com/f66/image/fetch/f_auto,q_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane_and_ms_wright.jpg"
                 alt="Jane’s smile beamed like it hadn’t before when Ms. Wright stepped on from the tenth floor."
                 class="cld-responsive img-fluid rounded"/></div>
     </div>
@@ -275,7 +275,7 @@ background-position: center center;">
              
         </div>
         <div class="col-sm-6"><img
-                src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane_and_mr_goode.png"
+                data-src="https://res.cloudinary.com/f66/image/fetch/q_auto,f_auto,w_auto,dpr_auto,c_scale/http://www.the66thfloor.com/images/jane_and_mr_goode.png"
                 alt="Jane sure was late, the time this was taking, but she reached out her hand to Mr. Goode for handshaking."
                 class="cld-responsive img-fluid rounded"/></div>
 
@@ -512,8 +512,8 @@ background-position: center center;">
     // replace 'demo' with your cloud name in the line above
     cl.responsive();
     console.log('Cloudinary activated.');
-    $.cloudinary.config({cloud_name: 'f66', secure: true});
-    $.cloudinary.responsive();</script>
+    //$.cloudinary.config({cloud_name: 'f66', secure: true});
+    //$.cloudinary.responsive();</script>
 
 </body>
 </html>
