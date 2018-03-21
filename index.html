@@ -60,6 +60,13 @@
             text-shadow: 2px 2px #fff, -2px 2px #fff, -2px -2px #fff, 2px -2px #fff;
         }
     </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
+    <script type="text/javascript">
+        var cl = cloudinary.Cloudinary.new({cloud_name: "f66"});
+        // replace 'demo' with your cloud name in the line above
+        cl.responsive();
+        console.log('Cloudinary activated.');
+    </script>
 
 </head>
 <body>
@@ -506,11 +513,6 @@ background-position: center center;">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
-<script type="text/javascript">
-    var cl = cloudinary.Cloudinary.new({cloud_name: "f66"});
-    // replace 'demo' with your cloud name in the line above
-    cl.responsive();
-</script>
+
 </body>
 </html>
