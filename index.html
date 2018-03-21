@@ -60,13 +60,6 @@
             text-shadow: 2px 2px #fff, -2px 2px #fff, -2px -2px #fff, 2px -2px #fff;
         }
     </style>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
-    <script type="text/javascript">
-        var cl = cloudinary.Cloudinary.new({cloud_name: "f66"});
-        // replace 'demo' with your cloud name in the line above
-        cl.responsive();
-        console.log('Cloudinary activated.');
-    </script>
 
 </head>
 <body>
@@ -500,19 +493,28 @@ background-position: center center;">
 </div>
 -->
 <!-- Font Awesome Code -->
-<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <!-- End font Awesome code -->
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="//code.jquery.com/jquery-3.2.1.slim.min.js"
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.min.js"></script>
+<script type="text/javascript">
+    var cl = cloudinary.Cloudinary.new({cloud_name: "f66"});
+    // replace 'demo' with your cloud name in the line above
+    cl.responsive();
+    console.log('Cloudinary activated.');
+</script>
+
+<script type="text/javascript">$.cloudinary.responsive()</script>
 
 </body>
 </html>
